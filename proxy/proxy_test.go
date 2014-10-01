@@ -12,6 +12,10 @@ import (
 )
 
 func TestCache(t *testing.T) {
+	if testing.Short() {
+		t.Skip("skipping: false positive on the race detector.")
+	}
+
 	var a int32
 	var b int32
 
