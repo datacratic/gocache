@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/datacratic/gortbkit/deps/gocache/lru"
+	"github.com/datacratic/gocache/lru"
 )
 
 // DefaultPartitionCount defines the default number of partitions used by the proxy cache.
